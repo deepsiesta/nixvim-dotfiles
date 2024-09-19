@@ -4,7 +4,7 @@
     # depending on which module you chose to use to install Nixvim.
     #
     # Uncomment if you are using the home-manager module
-    # inputs.nixvim.homeManagerModules.nixvim
+    inputs.nixvim.homeManagerModules.nixvim
     # Uncomment if you are using the nixos module
     #inputs.nixvim.nixosModules.nixvim
     # Uncomment if you are using the nix-darwin module
@@ -25,7 +25,7 @@
     #  Here are some example plugins that I've included in the Kickstart repository.
     #  Uncomment any of the lines below to enable them (you will need to restart nvim).
 
-    ./plugins/kickstart/plugins/debug.nix
+    # ./plugins/kickstart/plugins/debug.nix
     ./plugins/kickstart/plugins/indent-blankline.nix
     ./plugins/kickstart/plugins/lint.nix
     ./plugins/kickstart/plugins/autopairs.nix
