@@ -4,7 +4,7 @@
     # depending on which module you chose to use to install Nixvim.
     #
     # Uncomment if you are using the home-manager module
-    #inputs.nixvim.homeManagerModules.nixvim
+    inputs.nixvim.homeManagerModules.nixvim
     # Uncomment if you are using the nixos module
     #inputs.nixvim.nixosModules.nixvim
     # Uncomment if you are using the nix-darwin module
@@ -24,13 +24,13 @@
     #
     #  Here are some example plugins that I've included in the Kickstart repository.
     #  Uncomment any of the lines below to enable them (you will need to restart nvim).
-    #
-    # ./plugins/kickstart/plugins/debug.nix
-    # ./plugins/kickstart/plugins/indent-blankline.nix
-    # ./plugins/kickstart/plugins/lint.nix
-    # ./plugins/kickstart/plugins/autopairs.nix
-    # ./plugins/kickstart/plugins/neo-tree.nix
-    #
+
+    ./plugins/kickstart/plugins/debug.nix
+    ./plugins/kickstart/plugins/indent-blankline.nix
+    ./plugins/kickstart/plugins/lint.nix
+    ./plugins/kickstart/plugins/autopairs.nix
+    ./plugins/kickstart/plugins/neo-tree.nix
+
     # NOTE: Configure your own plugins `see https://nix-community.github.io/nixvim/`
     # Add your plugins to ./plugins/custom/plugins and import them below
   ];
@@ -129,6 +129,12 @@
           # Like many other themes, this one has different styles, and you could load
           # any other, such as 'storm', 'moon', or 'day'.
           style = "night";
+          transparent = true;
+          styles = {
+            sidebars = 'transparent';
+            floats = 'transparent';
+            keywords = { italic = false },
+          };
         };
       };
     };
@@ -141,7 +147,7 @@
       maplocalleader = " ";
 
       # Set to true if you have a Nerd Font installed and selected in the terminal
-      have_nerd_font = false;
+      have_nerd_font = true;
     };
 
     # [[ Setting options ]]
@@ -154,7 +160,7 @@
       number = true;
       # You can also add relative line numbers, to help with jumping.
       #  Experiment for yourself to see if you like it!
-      #relativenumber = true
+      relativenumber = true;
 
       # Enable mouse mode, can be useful for resizing splits for example!
       mouse = "a";
