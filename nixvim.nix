@@ -133,7 +133,7 @@
           styles = {
             sidebars = "transparent";
             floats = "transparent";
-            keywords = { italic = false },
+            keywords = { italic = false };
           };
         };
       };
