@@ -346,7 +346,7 @@
       # https://nix-community.github.io/nixvim/plugins/todo-comments/index.html
       todo-comments = {
         enable = true;
-        signs = true;
+        settings.signs = true;
       };
     };
 

@@ -12,7 +12,7 @@
     # https://nix-community.github.io/nixvim/plugins/conform-nvim.html
     plugins.conform-nvim = {
       enable = true;
-      notifyOnError = false;
+      notify_on_error = false;
       settings.format_on_save = ''
         function(bufnr)
           -- Disable "format_on_save lsp_fallback" for lanuages that don't
@@ -25,7 +25,7 @@
           }
         end
       '';
-      formattersByFt = {
+      formatters_by_ft = {
         lua = ["stylua"];
         python = [ "ruff_format" ];
         # Conform can also run multiple formatters sequentially
