@@ -333,6 +333,11 @@
           end
         '';
       }
+      # Fix current line highlighting transparency
+      {
+        event = "ColorScheme";
+        command = "highlight CursorLine guibg=NONE";
+      }
     ];
 
     plugins = {
@@ -347,6 +352,18 @@
       todo-comments = {
         enable = true;
         settings.signs = true;
+      };
+      typescript-tools.enable = true;
+      nix.enable = true;
+      nix-develop.enable = true;
+      obsidian = {
+        enable = true;
+        settings = {
+          workspaces = [
+          {
+            name = "General";
+            path = "~/Documents/obsidian/General";
+          }];
       };
     };
 
