@@ -368,6 +368,13 @@
       };
     };
 
+    # Add tsserver dependencies for ts-tools
+    extraPackages = with pkgs; [
+      nodejs
+      nodePackages.typescript
+      nodepackages.typescript-language-server
+    ];
+
     # https://nix-community.github.io/nixvim/NeovimOptions/index.html?highlight=extraplugins#extraplugins
     extraPlugins = with pkgs.vimPlugins; [
       # Useful for getting pretty icons, but requires a Nerd Font.
