@@ -371,8 +371,8 @@
     # Add tsserver dependencies for ts-tools
     extraPackages = with pkgs; [
       nodejs
-      nodePackages.typescript
-      nodepackages.typescript-language-server
+      typescript
+      typescript-language-server
     ];
 
     # https://nix-community.github.io/nixvim/NeovimOptions/index.html?highlight=extraplugins#extraplugins
