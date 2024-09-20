@@ -222,6 +222,9 @@
 
       # See `:help hlsearch`
       hlsearch = true;
+
+      # Conceal hidden text blocks (needed by Obsidian plugin)
+      conceallevel = 2;
     };
 
     # [[ Basic Keymaps ]]
