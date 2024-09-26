@@ -344,6 +344,8 @@
     ];
 
     plugins = {
+      # Icons for Telescope and neo-tree
+      web-devicons.enable = true;
       # Detect tabstop and shiftwidth automatically
       # https://nix-community.github.io/nixvim/plugins/sleuth/index.html
       sleuth = {
