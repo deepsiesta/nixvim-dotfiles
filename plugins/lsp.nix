@@ -78,7 +78,7 @@
         pyright = {
           enable = true;
         };
-        rust-analyzer = {
+        rust_analyzer = {
           enable = true;
           installCargo = true;
           installRustc = true;
@@ -99,7 +99,7 @@
         #  enable = true;
         #}
 
-        lua-ls = {
+        lua_ls = {
           enable = true;
 
           # cmd = {
