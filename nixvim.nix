@@ -367,7 +367,7 @@
           workspaces = [
           {
             name = "General";
-            path = "~/Documents/obsidian/General";
+            path = "~/Documents/obsidian";
           }];
         };
       };
