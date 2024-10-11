@@ -1,5 +1,13 @@
-{
+{pkgs, ...}: {
   programs.nixvim = {
+    # Dependencies
+    #
+    # https://nix-community.github.io/nixvim/NeovimOptions/index.html?highlight=extraplugins#extrapackages
+    extraPackages = with pkgs; [
+      # Used to format Lua code
+      nodePackages.markdownlint-cli
+    ];
+
     # Linting
     # https://nix-community.github.io/nixvim/plugins/lint/index.html
     plugins.lint = {
