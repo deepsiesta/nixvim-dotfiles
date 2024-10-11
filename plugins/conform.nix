@@ -7,6 +7,9 @@
       # Used to format Lua code
       stylua
       nodePackages.markdownlint-cli
+      alejandra
+      prettierd
+      ruff
     ];
 
     # Autoformat
