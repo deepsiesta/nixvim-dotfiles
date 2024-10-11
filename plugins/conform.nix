@@ -6,6 +6,7 @@
     extraPackages = with pkgs; [
       # Used to format Lua code
       stylua
+      nodePackages.markdownlint-cli2
     ];
 
     # Autoformat
@@ -30,6 +31,7 @@
           lua = ["stylua"];
           nix = [ "alejandra" ];
           python = [ "ruff_format" ];
+          markdown = [ "markdownlint_cli2"];
           # Conform can also run multiple formatters sequentially
           # python = [ "isort "black" ];
           #
