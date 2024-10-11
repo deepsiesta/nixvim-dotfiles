@@ -36,6 +36,7 @@
           python = ["ruff_format"];
           markdown = ["markdownlint"];
           javascript = ["prettierd"];
+          latex = ["latexindent"];
           # Conform can also run multiple formatters sequentially
           # python = [ "isort "black" ];
           #
