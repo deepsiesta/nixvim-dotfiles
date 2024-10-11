@@ -1,4 +1,8 @@
-{ pkgs, inputs, ... }: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   imports = [
     # NOTE: The first thing you will want to do is uncommented on of the three imports below
     # depending on which module you chose to use to install Nixvim.
@@ -134,7 +138,7 @@
           styles = {
             sidebars = "transparent";
             floats = "transparent";
-            keywords = { italic = false; };
+            keywords = {italic = false;};
           };
         };
       };
@@ -366,10 +370,11 @@
         enable = true;
         settings = {
           workspaces = [
-          {
-            name = "General";
-            path = "~/Documents/obsidian";
-          }];
+            {
+              name = "General";
+              path = "~/Documents/obsidian";
+            }
+          ];
         };
       };
     };
