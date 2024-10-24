@@ -127,8 +127,8 @@
     # Don't forget to disable the colorschemes you arent using
     #
     # If you want to see what colorschemes are already installed, you can use `:Telescope colorschme`.
-    # colorschemes = {
-    #   # https://nix-community.github.io/nixvim/colorschemes/tokyonight/index.html
+    colorschemes = {
+      #   # https://nix-community.github.io/nixvim/colorschemes/tokyonight/index.html
       tokyonight = {
         enable = true;
         settings = {
