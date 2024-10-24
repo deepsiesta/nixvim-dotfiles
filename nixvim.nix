@@ -38,6 +38,7 @@
     # NOTE: Configure your own plugins `see https://nix-community.github.io/nixvim/`
     # Add your plugins to ./plugins/custom/plugins and import them below
     ./plugins/custom/plugins/vimtex.nix
+    ./plugins/custom/plugins/transparent.nix
   ];
 
   /*
