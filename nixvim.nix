@@ -38,7 +38,7 @@
     # NOTE: Configure your own plugins `see https://nix-community.github.io/nixvim/`
     # Add your plugins to ./plugins/custom/plugins and import them below
     ./plugins/custom/plugins/vimtex.nix
-    ./plugins/custom/plugins/transparent.nix
+    # ./plugins/custom/plugins/transparent.nix
   ];
 
   /*
@@ -129,21 +129,21 @@
     # If you want to see what colorschemes are already installed, you can use `:Telescope colorschme`.
     # colorschemes = {
     #   # https://nix-community.github.io/nixvim/colorschemes/tokyonight/index.html
-    #   tokyonight = {
-    #     enable = true;
-    #     settings = {
-    #       # Like many other themes, this one has different styles, and you could load
-    #       # any other, such as 'storm', 'moon', or 'day'.
-    #       style = "night";
-    #       transparent = true;
-    #       styles = {
-    #         sidebars = "transparent";
-    #         floats = "transparent";
-    #         keywords = {italic = false;};
-    #       };
-    #     };
-    #   };
-    # };
+      tokyonight = {
+        enable = true;
+        settings = {
+          # Like many other themes, this one has different styles, and you could load
+          # any other, such as 'storm', 'moon', or 'day'.
+          style = "night";
+          transparent = true;
+          styles = {
+            sidebars = "transparent";
+            floats = "transparent";
+            keywords = {italic = false;};
+          };
+        };
+      };
+    };
 
     # https://nix-community.github.io/nixvim/NeovimOptions/index.html?highlight=globals#globals
     globals = {
